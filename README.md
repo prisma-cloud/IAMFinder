@@ -97,7 +97,7 @@ docker build -t iamfinder .
 ```
 
 # Configuration
-IAMFinder needs a configuration file ([config_dir/config.json]()) and a credential file ([config_dir/creds.json]()) to start. 
+IAMFinder needs a configuration file ([config_dir/config.json](https://github.com/prisma-cloud/IAMFinder/blob/main/config_dir/config.json)) and a credential file ([config_dir/creds.json](https://github.com/prisma-cloud/IAMFinder/blob/main/config_dir/creds.json)) to start. 
 
 `config.json`
 ```json
