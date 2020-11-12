@@ -32,7 +32,7 @@ IAMFinder needs an [access key](https://docs.aws.amazon.com/IAM/latest/UserGuide
    + [Obtain a security token through AssumeRole](https://aws.amazon.com/premiumsupport/knowledge-center/iam-assume-role-cli/)
 
 ## Permissions
-The required permissions depend on the AWS services that IAMFinder uses. IAMFinder can work with one or multiple AWS services. Using multiple services concurrently can achieve a higher enumeration rate because AWS API gateway enforces a rate-limit on each API. IAMFinder currently implements the APIs for four AWS services, IAM, S3, SQS, and KMS. These services can be enabled or disabled in the [config.json]() file. [AWS_Policy.json]() contains the minimal set of permissions needed to use all four services. The exact permissions required for each service are as follows:
+The required permissions depend on the AWS services that IAMFinder uses. IAMFinder can work with one or multiple AWS services. Using multiple services concurrently can achieve a higher enumeration rate because AWS API gateway enforces a rate-limit on each API. IAMFinder currently implements the APIs for four AWS services, IAM, S3, SQS, and KMS. These services can be enabled or disabled in the [config.json](https://github.com/prisma-cloud/IAMFinder/blob/main/config_dir/config.json) file. [AWS_Policy.json](https://github.com/prisma-cloud/IAMFinder/blob/main/AWS_Policy.json) contains the minimal set of permissions needed to use all four services. The exact permissions required for each service are as follows:
 
 #### `S3`
 ```bash
