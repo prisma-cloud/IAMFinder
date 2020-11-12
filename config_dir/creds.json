@@ -1,0 +1,21 @@
+{
+    "account1": {
+        "Region": "us-west-1",
+        "Active": true,
+        "AccessKeyId": "",
+        "SecretAccessKey": ""
+    },
+    "account2": {
+        "Region": "us-east-1",
+        "Active": false,
+        "AccessKeyId": "",
+        "SecretAccessKey": ""
+    },
+    "account3": {
+        "Region": "us-east-2",
+        "Active": false, 
+        "AccessKeyId": "",
+        "SecretAccessKey": "",
+        "SessionToken": ""
+    }
+}

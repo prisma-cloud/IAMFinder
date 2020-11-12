@@ -1,0 +1,36 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:UpdateAssumeRolePolicy",
+                "sqs:ListQueues",
+                "s3:PutBucketPublicAccessBlock",
+                "kms:PutKeyPolicy",
+                "kms:GetKeyPolicy",
+                "iam:ListRoles",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "s3:CreateBucket",
+                "kms:DisableKey",
+                "kms:ListKeys",
+                "sts:AssumeRole",
+                "s3:ListAllMyBuckets",
+                "kms:ScheduleKeyDeletion",
+                "kms:ListAliases",
+                "kms:CreateAlias",
+                "sqs:DeleteQueue",
+                "s3:PutBucketPolicy",
+                "kms:CreateKey",
+                "sts:GetCallerIdentity",
+                "sqs:CreateQueue",
+                "s3:GetBucketLocation",
+                "s3:DeleteBucket",
+                "sqs:SetQueueAttributes"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

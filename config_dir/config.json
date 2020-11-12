@@ -1,0 +1,31 @@
+{
+    "CREDS_PATH": "./config_dir/creds.json",
+    "ROLENAMES_FILE_PATH": "./config_dir/rolelist.txt",
+    "USERNAMES_FILE_PATH": "./config_dir/userlist.txt",
+    "SERVICES_CONFIG":{
+        "s3":{
+            "enabled": true,
+            "resource_type":"s3",
+            "resource_prefix":"iamcheckers3",
+            "resource_count":1
+        },
+        "kms":{
+            "enabled": true,
+            "resource_type":"kms",
+            "resource_prefix":"iamcheckerkms",
+            "resource_count":1
+        },
+        "sqs":{
+            "enabled": true,
+            "resource_type":"sqs",
+            "resource_prefix":"iamcheckersqs",
+            "resource_count":1
+        },
+        "iam":{
+            "enabled": true,
+            "resource_type":"iam",
+            "resource_prefix":"iamcheckeriam",
+            "resource_count":1
+        }        
+    }
+}
