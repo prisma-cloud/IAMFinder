@@ -7,13 +7,13 @@
  |_____/_/    \_\_|  |_|_|    |_|_| |_|\__,_|\___|_|   
 ```
 # IAMFinder
-IAMFinder enumerates and finds users and IAM roles in a target AWS account. Upon successfully identifying an IAM role, IAMFinder can also check if this role can be [assumed anonymously](https://aws.amazon.com/premiumsupport/knowledge-center/s3-object-change-anonymous-ownership/). The tool was developed during a [red team exercise]() and it implemented the technique described in this [blog](). Some notable features include:
+IAMFinder enumerates and finds users and IAM roles in a target AWS account. Upon successfully identifying an IAM role, IAMFinder can also check if this role can be [assumed anonymously](https://aws.amazon.com/premiumsupport/knowledge-center/s3-object-change-anonymous-ownership/). The tool was developed during a [red team exercise]() and it implemented the technique described in this [blog](https://unit42.paloaltonetworks.com/aws-resource-based-policy-apis/). Some notable features include:
 
 + **Stealthy**. The target account won't notice that its users or roles are being enumerated. Because the enumeration performed in your accounts, the logs only show up in your accounts. However, the target account will notice if IAMFinder attempts to assume roles.
 + **Scalable**. IAMFinder can achieve a higher enumeration rate by:
     + Concurrently invoking APIs of multiple AWS services (e.g., S3, KMS, IAM). 
     + Concurrently using multiple AWS accounts. 
-+ **Modularized and extensible**. One can implement and integrate additional AWS APIs described in the [blog]()
++ **Modularized and extensible**. One can implement and integrate additional AWS APIs described in the [blog](https://unit42.paloaltonetworks.com/aws-resource-based-policy-apis/)
 + **Cross-partitions**. IAMFinder has been tested in all three AWS [partitions](https://docs.amazonaws.cn/en_us/general/latest/gr/aws-arns-and-namespaces.html), AWS Standard (aws), AWS GovCloud U.S. (aws-us-gov), and AWS China (aws-cn).
 + **Zero cost**. The resources that IAMFinder creates in each service don’t have actual workloads and should not incur any costs.
 
@@ -72,7 +72,7 @@ The required permissions depend on the AWS services that IAMFinder uses. IAMFind
 "iam:DeleteRole"
 ```
 
-Note that we plan to integrate more AWS services described in the [blog](). The permissions policy will be updated when new services are added.
+Note that we plan to integrate more AWS services described in the [blog](https://unit42.paloaltonetworks.com/aws-resource-based-policy-apis/). The permissions policy will be updated when new services are added.
 
    + [Create an IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html#access_policies_create-json-editor)
    + [Create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
