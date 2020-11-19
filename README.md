@@ -7,7 +7,7 @@
  |_____/_/    \_\_|  |_|_|    |_|_| |_|\__,_|\___|_|   
 ```
 # IAMFinder
-IAMFinder enumerates and finds users and IAM roles in a target AWS account. Upon successfully identifying an IAM role, IAMFinder can also check if this role can be [assumed anonymously](https://aws.amazon.com/premiumsupport/knowledge-center/s3-object-change-anonymous-ownership/). The tool was developed during a [red team exercise](https://www.paloaltonetworks.com/prisma/unit42-cloud-threat-research) and it implemented the technique described in this [blog](https://unit42.paloaltonetworks.com/aws-resource-based-policy-apis/). Some features of IAMFinder include:
+IAMFinder enumerates and finds users and IAM roles in a target AWS account. With only the AWS account number of the targeted account, IAMFinder is able to identify users and roles in that environment. Upon successfully identifying an IAM role, IAMFinder can also check if this role can be [assumed anonymously](https://aws.amazon.com/premiumsupport/knowledge-center/s3-object-change-anonymous-ownership/). The tool was developed during a [red team exercise](https://www.paloaltonetworks.com/prisma/unit42-cloud-threat-research) and it implemented the technique described in this [blog](https://unit42.paloaltonetworks.com/aws-resource-based-policy-apis/). Some features of IAMFinder include:
 
 + **Silent**. IAMFinder doesn't trigger any alert or leave any log at the target account. Because the enumeration is performed in your accounts, the logs only show up in your accounts. However, the target account will notice if IAMFinder attempts to assume roles.
 + **High enumeration rate**. IAMFinder can achieve a higher enumeration rate by:
@@ -17,7 +17,7 @@ IAMFinder enumerates and finds users and IAM roles in a target AWS account. Upon
 + **Cross-partitions**. IAMFinder has been tested in all three [AWS partitions](https://docs.amazonaws.cn/en_us/general/latest/gr/aws-arns-and-namespaces.html), AWS Standard (aws), AWS GovCloud U.S. (aws-us-gov), and AWS China (aws-cn).
 + **Zero cost**. The resources that IAMFinder creates in each service don’t have actual workloads and should not incur any costs.
 
-
+IAMFinder's performace evaluation can be found in this [blog](https://unit42.paloaltonetworks.com/iamfinder/). 
 # Prerequisites
 IAMFinder is built with Python 3 and [AWS Boto3 SDK](https://aws.amazon.com/sdk-for-python/). An active AWS account and a Python 3.5+ interpreter are needed to run the tool. 
 

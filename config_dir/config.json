@@ -7,25 +7,25 @@
             "enabled": true,
             "resource_type":"s3",
             "resource_prefix":"iamcheckers3",
-            "resource_count":1
+            "resource_count":3
         },
         "kms":{
             "enabled": true,
             "resource_type":"kms",
             "resource_prefix":"iamcheckerkms",
-            "resource_count":1
+            "resource_count":3
         },
         "sqs":{
             "enabled": true,
             "resource_type":"sqs",
             "resource_prefix":"iamcheckersqs",
-            "resource_count":1
+            "resource_count":2
         },
         "iam":{
             "enabled": true,
             "resource_type":"iam",
             "resource_prefix":"iamcheckeriam",
-            "resource_count":1
+            "resource_count":2
         }        
     }
 }
